@@ -19,11 +19,19 @@ namespace AppPortable
             {
                 Placeholder = "Escribe tu nombre"
             };
+            var btnPrimerBoton = new Button
+            {
+                Text = "Click me!"
+            };
+            btnPrimerBoton.Clicked += (sender, e) =>
+            {
+                DisplayAlert("Mensaje", txtNombre.Text, "OK");
+            };
             Content = new StackLayout
             {
                 Padding = 30,
                 Spacing = 10,
-                Children = { label, txtNombre}
+                Children = { label, txtNombre, btnPrimerBoton }
             };
         }
     }
