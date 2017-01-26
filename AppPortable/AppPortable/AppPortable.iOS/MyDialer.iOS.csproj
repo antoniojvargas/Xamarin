@@ -138,9 +138,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppPortable\AppPortable.csproj">
+    <ProjectReference Include="..\AppPortable\MyDialer.csproj">
       <Project>{bee5c9b0-2351-42db-a416-4808a1e47cf1}</Project>
-      <Name>AppPortable</Name>
+      <Name>MyDialer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable", "AppPortable\AppPortable\AppPortable.csproj", "{BEE5C9B0-2351-42DB-A416-4808A1E47CF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer", "AppPortable\AppPortable\MyDialer.csproj", "{BEE5C9B0-2351-42DB-A416-4808A1E47CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable.Droid", "AppPortable\AppPortable.Droid\AppPortable.Droid.csproj", "{1979621D-FFE6-4B04-8F3B-75D100B5A4E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer.Droid", "AppPortable\AppPortable.Droid\MyDialer.Droid.csproj", "{1979621D-FFE6-4B04-8F3B-75D100B5A4E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable.iOS", "AppPortable\AppPortable.iOS\AppPortable.iOS.csproj", "{643D96FD-C244-4C4B-906C-FB5F1785A3AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer.iOS", "AppPortable\AppPortable.iOS\MyDialer.iOS.csproj", "{643D96FD-C244-4C4B-906C-FB5F1785A3AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable.WinPhone", "AppPortable\AppPortable.WinPhone\AppPortable.WinPhone.csproj", "{2A33D8AE-9DE9-4778-B456-2E50995CCB32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer.WinPhone", "AppPortable\AppPortable.WinPhone\MyDialer.WinPhone.csproj", "{2A33D8AE-9DE9-4778-B456-2E50995CCB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable.UWP", "AppPortable\AppPortable.UWP\AppPortable.UWP.csproj", "{4DA3189E-6FC0-42C8-A8B4-42FA081FA27A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer.UWP", "AppPortable\AppPortable.UWP\MyDialer.UWP.csproj", "{4DA3189E-6FC0-42C8-A8B4-42FA081FA27A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPortable.Windows", "AppPortable\AppPortable.Windows\AppPortable.Windows.csproj", "{1CBE98D8-6281-4EC0-82F8-8808AE31C8CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDialer.Windows", "AppPortable\AppPortable.Windows\MyDialer.Windows.csproj", "{1CBE98D8-6281-4EC0-82F8-8808AE31C8CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
