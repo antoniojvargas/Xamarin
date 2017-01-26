@@ -128,9 +128,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppPortable\MyDialer.csproj">
+    <ProjectReference Include="..\AppPortable\AppPortable.csproj">
       <Project>{bee5c9b0-2351-42db-a416-4808a1e47cf1}</Project>
-      <Name>MyDialer</Name>
+      <Name>AppPortable</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
