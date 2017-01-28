@@ -26,9 +26,8 @@ namespace Listas1
             };
 
             var miListView = new ListView();
-            miListView.ItemsSource = from nombre in nombres
-                                     where nombre.StartsWith("H")
-                                     select nombre;
+            miListView.ItemsSource = nombres;
+                //from nombre in nombres where nombre.StartsWith("H") select nombre;
 
             miListView.ItemSelected += (sender, e) =>
             {

@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using System.Collections.Generic;
 
 namespace Phoneword
 {
@@ -9,6 +10,8 @@ namespace Phoneword
     [Activity(Label = "Phone Word", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        static readonly List<string> phoneNumbers = new List<string>();
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -19,6 +22,7 @@ namespace Phoneword
             EditText phoneNumberText = FindViewById<EditText>(Resource.Id.PhoneNumberText);
             Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
             Button callButton = FindViewById<Button>(Resource.Id.CallButton);
+            Button callHistoryButton = FindViewById<Button>(Resource.Id.CallHistoryButton);
 
             // Disable the "Call" button
             callButton.Enabled = false;
@@ -48,6 +52,10 @@ namespace Phoneword
                 var callDialog = new AlertDialog.Builder(this);
                 callDialog.SetMessage("Call " + translatedNumber + "?");
                 callDialog.SetNeutralButton("Call", delegate {
+                    // add dialed number to list of called numbers.
+                    phoneNumbers.Add(translatedNumber);
+                    // enable the Call History button
+                    callHistoryButton.Enabled = true;
                     // Create intent to dial phone
                     var callIntent = new Intent(Intent.ActionCall);
                     callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
@@ -58,6 +66,14 @@ namespace Phoneword
                 // Show the alert dialog to the user and wait for response.
                 callDialog.Show();
             };
+            
+            callHistoryButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(CallHistoryActivity));
+                intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
+                StartActivity(intent);
+            };
+
 
         }
     }
