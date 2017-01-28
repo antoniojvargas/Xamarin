@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyDialer
 {
-    interface IDialer
+    public interface IDialer
     {
         bool Dial(string number);
     }
