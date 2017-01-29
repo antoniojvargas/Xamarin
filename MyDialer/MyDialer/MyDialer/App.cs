@@ -4,18 +4,14 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MyDialer
 {
-    public partial class App : Application
+    public class App : Application
     {
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new MyDialer.MainPage();
+            MainPage = new MyContentPage();
         }
 
         protected override void OnStart()

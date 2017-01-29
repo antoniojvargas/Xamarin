@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{715B3D93-F7E5-41D3-87F5-C876B2A31D44}</ProjectGuid>
+    <ProjectGuid>{BDE77CB4-D7A7-49DE-83D1-5B453B7A3B94}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyDialer.Windows</RootNamespace>
@@ -137,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyDialer\MyDialer.csproj">
-      <Project>{00de5866-f344-441e-ab67-9e0411882bd0}</Project>
+      <Project>{8ecb08c9-5689-43fb-819e-0e3340ee06b6}</Project>
       <Name>MyDialer</Name>
     </ProjectReference>
   </ItemGroup>

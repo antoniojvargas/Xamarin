@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FC432C86-42E9-447B-91BB-FB6260F06BC1}</ProjectGuid>
+    <ProjectGuid>{BC40300B-CA3A-4D4B-8BE2-8D4B7367E06F}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>MyDialer.iOS</RootNamespace>
@@ -139,7 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyDialer\MyDialer.csproj">
-      <Project>{00de5866-f344-441e-ab67-9e0411882bd0}</Project>
+      <Project>{8ecb08c9-5689-43fb-819e-0e3340ee06b6}</Project>
       <Name>MyDialer</Name>
     </ProjectReference>
   </ItemGroup>
