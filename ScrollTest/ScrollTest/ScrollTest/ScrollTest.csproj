@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8ECB08C9-5689-43FB-819E-0E3340EE06B6}</ProjectGuid>
+    <ProjectGuid>{302F9E5A-573A-4694-8EAD-E2DE5F37AD5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyDialer</RootNamespace>
-    <AssemblyName>MyDialer</AssemblyName>
+    <RootNamespace>ScrollTest</RootNamespace>
+    <AssemblyName>ScrollTest</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
