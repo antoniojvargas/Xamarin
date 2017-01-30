@@ -2,4 +2,25 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">ChartTest</string>
+    <string name="cereal_prompt">Seleccione un Cereal</string>
+    <string name="zona_prompt">Seleccione una Zona</string>
+    <string name="fecha_prompt">Seleccione Fecha</string>
+    
+  <string-array name="cereal_array">
+      <item>Soja</item>
+      <item>Girasol</item>
+      <item>Trigo</item>
+      <item>Maíz</item>
+      <item>Sorgo</item>
+      <item>Cebada</item>
+    </string-array>
+
+    <string-array name="zona_array">
+      <item>Zona 19: Quequén</item>
+      <item>Zona 20: Bahía Blanca</item>
+      <item>Zona 21: Córdoba</item>
+      <item>Zona 22: Buenos Aires</item>
+      <item>Zona 23: Rosario Norte</item>
+      <item>Zona 24: Rosario Sur</item>
+    </string-array>  
 </resources>

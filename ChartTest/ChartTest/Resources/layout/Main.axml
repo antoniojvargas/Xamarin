@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <TextView
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_marginTop="10dip"
+        p1:text="@string/cereal_prompt" />
+    <Spinner
+        p1:layout_width="match_parent"
+        p1:layout_height="41.0dp"
+        p1:id="@+id/spinnerCereal"
+        p1:prompt="@string/cereal_prompt" />
+    <TextView
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_marginTop="10dip"
+        p1:text="@string/zona_prompt" />
+    <Spinner
+        p1:layout_width="match_parent"
+        p1:layout_height="41.0dp"
+        p1:id="@+id/spinnerZona"
+        p1:prompt="@string/zona_prompt" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp">
+        <TextView
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:layout_weight="0.5"
+            p1:text="@string/fecha_prompt" />
+        <EditText
+            p1:id="@+id/editFecha"
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:layout_weight="0.5"
+            p1:inputType="date" />
+    </LinearLayout>
+    <BarChart.BarChartView
+        p1:id="@+id/barChart"
+        p1:layout_width="fill_parent"
+        p1:layout_height="280dp" />
 </LinearLayout>
