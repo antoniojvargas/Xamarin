@@ -1,4 +1,5 @@
 ﻿using System.Text;
+
 namespace Core
 {
     public static class PhonewordTranslator
@@ -21,7 +22,7 @@ namespace Core
                     if (result != null)
                         newNumber.Append(result);
                 }
-                // otherwise we've skipped a non-numeric char
+                
             }
             return newNumber.ToString();
         }

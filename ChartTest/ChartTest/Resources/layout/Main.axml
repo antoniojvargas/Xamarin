@@ -6,26 +6,6 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
-    <TextView
-        p1:layout_width="fill_parent"
-        p1:layout_height="wrap_content"
-        p1:layout_marginTop="10dip"
-        p1:text="@string/cereal_prompt" />
-    <Spinner
-        p1:layout_width="match_parent"
-        p1:layout_height="41.0dp"
-        p1:id="@+id/spinnerCereal"
-        p1:prompt="@string/cereal_prompt" />
-    <TextView
-        p1:layout_width="fill_parent"
-        p1:layout_height="wrap_content"
-        p1:layout_marginTop="10dip"
-        p1:text="@string/zona_prompt" />
-    <Spinner
-        p1:layout_width="match_parent"
-        p1:layout_height="41.0dp"
-        p1:id="@+id/spinnerZona"
-        p1:prompt="@string/zona_prompt" />
     <LinearLayout
         p1:orientation="horizontal"
         p1:layout_width="match_parent"
@@ -33,17 +13,55 @@
         <TextView
             p1:layout_width="0px"
             p1:layout_height="40dp"
-            p1:layout_weight="0.5"
-            p1:text="@string/fecha_prompt" />
-        <EditText
-            p1:id="@+id/editFecha"
+            p1:layout_marginTop="10dip"
+            p1:layout_weight="0.3"
+            p1:text="@string/cereal_prompt" />
+        <Spinner
             p1:layout_width="0px"
             p1:layout_height="40dp"
-            p1:layout_weight="0.5"
-            p1:inputType="date" />
+            p1:layout_marginTop="10dip"
+            p1:id="@+id/spinnerCereal"
+            p1:layout_weight="0.7"
+            p1:prompt="@string/cereal_prompt" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp">
+        <TextView
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:layout_marginTop="10dip"
+            p1:layout_weight="0.3"
+            p1:text="@string/zona_prompt" />
+        <Spinner
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:layout_marginTop="10dip"
+            p1:id="@+id/spinnerZona"
+            p1:layout_weight="0.7"
+            p1:prompt="@string/zona_prompt" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp">
+        <Button
+            p1:id="@+id/buttonFecha"
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:text="Fecha"
+            p1:layout_weight="0.5" />
+        <TextView
+            p1:id="@+id/date_display"
+            p1:layout_width="0px"
+            p1:layout_height="40dp"
+            p1:layout_weight="0.5" />
     </LinearLayout>
     <BarChart.BarChartView
         p1:id="@+id/barChart"
+        p1:layout_marginTop="20dip"
+        p1:layout_marginLeft="20dip"
         p1:layout_width="fill_parent"
-        p1:layout_height="280dp" />
+        p1:layout_height="fill_parent" />
 </LinearLayout>

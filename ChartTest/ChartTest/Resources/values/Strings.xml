@@ -2,9 +2,9 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">ChartTest</string>
-    <string name="cereal_prompt">Seleccione un Cereal</string>
-    <string name="zona_prompt">Seleccione una Zona</string>
-    <string name="fecha_prompt">Seleccione Fecha</string>
+    <string name="cereal_prompt">Cereal</string>
+    <string name="zona_prompt">Zona</string>
+    <string name="fecha_prompt">Fecha</string>
     
   <string-array name="cereal_array">
       <item>Soja</item>

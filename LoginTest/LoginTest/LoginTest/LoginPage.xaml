@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginTest.LoginPage">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Text="Regístrate" Clicked="OnSignUpButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+      <StackLayout VerticalOptions="StartAndExpand">
+        <Label Text="Usuario" />
+        <Entry x:Name="usernameEntry" Placeholder="Usuario" />
+        <Label Text="Clave" />
+        <Entry x:Name="passwordEntry" IsPassword="true" />
+        <Button Text="Login" Clicked="OnLoginButtonClicked" />
+        <Label x:Name="messageLabel" />
+      </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
