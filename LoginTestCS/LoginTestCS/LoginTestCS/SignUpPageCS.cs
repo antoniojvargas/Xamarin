@@ -64,8 +64,10 @@ namespace LoginTestCS
                 var rootPage = Navigation.NavigationStack.FirstOrDefault();
                 if (rootPage != null)
                 {
+                    App.users.Add(user);
                     App.IsUserLoggedIn = true;
-                    Navigation.InsertPageBefore(new MainPageCS(), Navigation.NavigationStack.First());
+                    //Navigation.InsertPageBefore(new MainPageCS(), Navigation.NavigationStack.First());
+                    Navigation.InsertPageBefore(new LoginPageCS(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
             }
@@ -77,7 +79,21 @@ namespace LoginTestCS
 
         bool AreDetailsValid(User user)
         {
-            return (!string.IsNullOrWhiteSpace(user.Username) && !string.IsNullOrWhiteSpace(user.Password) && !string.IsNullOrWhiteSpace(user.Email) && user.Email.Contains("@"));
+            //return (!string.IsNullOrWhiteSpace(user.Username) && !string.IsNullOrWhiteSpace(user.Password) && !string.IsNullOrWhiteSpace(user.Email) && user.Email.Contains("@"));
+            if ((!string.IsNullOrWhiteSpace(user.Username) && !string.IsNullOrWhiteSpace(user.Password) && !string.IsNullOrWhiteSpace(user.Email) && user.Email.Contains("@")) == true)
+            {
+                //DisplayAlert("Exito", "Usuario " + user.Username + " registrado", "OK");
+                DisplayMemmer(user);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public async void DisplayMemmer(User user)
+        {
+            await DisplayAlert("Exito", "Usuario " + user.Username + " registrado", "OK");
         }
     }
 }

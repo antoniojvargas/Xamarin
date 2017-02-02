@@ -81,7 +81,22 @@ namespace LoginTestCS
 
         bool AreCredentialsCorrect(User user)
         {
-            return user.Username == Constants.Username && user.Password == Constants.Password;
+            if(App.users == null)
+            {
+                return false;
+            }
+            else
+            {
+                foreach(User us in App.users)
+                {
+                    if(us.Username == user.Username && us.Password == user.Password)
+                    {
+                        return true;
+                    }
+                }
+            }
+            //return user.Username == Constants.Username && user.Password == Constants.Password;
+            return false;
         }
     }
 }

@@ -11,8 +11,13 @@ namespace LoginTestCS
     {
         public static bool IsUserLoggedIn { get; set; }
 
+        //public List<User> users = new List<User>();
+        public static List<User> users { get; set; }
+
         public App()
         {
+            users = new List<User>();
+
             if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new LoginPageCS());
